@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home - Bud's Ice Cream</title>
+<!--style-->
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-ui-1.9.2.tabs.custom.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-ui-1.9.2.datepicker.custom.min.js" type="text/javascript"></script>
+<!--end style-->
+</head>
+
+<body>
+<!--home page-->
+<div data-role="page" id="home" data-theme="e" style="text-align:center">
+	<div data-role="header" id="logo" data-theme="e">
+    	<!--div chua logo-->
+    	<div id="box-logo">
+        	<img src="images/logobud.png"><!--logo-->
+    	</div>
+        <!--end logo--> 
+    </div>
+	<!--begin content-->
+    <div data-role="content">
+      <div class="ui-grid-a">
+        <div class="ui-block-a"><a href="#manager" data-role="button"><img src="images/manager.png" style="width:100%;height:20%"><br>Manager</a></div>
+        <div class="ui-block-b"><a href="#chooser-role" data-role="button"><img src="images/banhang.png" style="width:100%;height:20%"><br>Seller</a></div>
+        <div class="ui-block-a"><a href="#bartender" data-role="button"><img src="images/bartender-icon-3.png" style="width:100%;height:20%"><br>Bartender</a></div>
+        <div class="ui-block-b"><a href="#" data-role="button"><img src="images/bao-cao-thong-ke.png" style="width:100%;height:20%"><br>Report</a></div>
+      </div>
+      
+    </div>
+    <!--end content-->
+</div>
+<!--end home page-->
+
+<!--chooser-role-->
+<div data-role="page" id="chooser-role" data-theme="e">
+  <div data-role="header" data-theme="e">
+  
+    <h1>Chosser Roles</h1>
+  </div>
+  <div data-role="content">
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><a href="#menu" data-role="button"><img src="images/menu.png" style="width:100%;height:20%;border-radius:50px"><br>Menu</a></div>
+      <div class="ui-block-b"><a href="#" data-role="button"><img src="images/thanh-toan.png" style="width:100%;height:20%;border-radius:50px"><br>Payment</a></div>
+    </div>
+  </div>
+  <div data-role="navbar" data-theme="e">
+  	<a href="#home" data-role="button" data-icon="home">Home</a>
+    <a href="#home" data-role="button" data-icon="delete">Log Out</a>
+  </div>
+</div>
+<!--end chosser-->
+
+<!--menu-->
+<div data-role="page" id="menu" data-theme="e" style="text-align:center">
+	<div data-role="header" data-theme="e">
+    	<a href="#home" data-role="button" data-icon="home">Home</a>
+    	<h4>Menu List</h4>
+    </div>
+    
+  	<div data-role="content">
+  	  <div class="ui-grid-a">
+  	    <div class="ui-block-a" ><a href="#cocktails" data-role="button"><img src="images/pomegranate-spiced-cocktail.jpg" style="width:100px;height:100px;border-radius:50px"><br>Cocktail</a></div>
+  	    <div class="ui-block-b"><a href="#ice-cream" data-role="button" ><img src="images/ice_cream_PNG5101.png" style="width:100px;height:100px;border-radius:50px"><br>Ice Cream</a></div>
+  	    <div class="ui-block-a"><a href="#coffee" data-role="button"><img src="images/coffee.jpg" style="width:100px;height:100px;border-radius:50px"><br>Coffee</a></div>
+  	    <div class="ui-block-b"><a href="#smoothies" data-role="button"><img src="images/smoothie1.jpg" style="width:100px;height:100px;border-radius:50px"><br>Smoothies</a></div>
+  	    <div class="ui-block-a"><a href="#cakes" data-role="button"><img src="images/Strawberry-Chocolate-Cake-1.jpg" style="width:100px;height:100px;border-radius:50px"><br>Cakes</a></div>
+  	    <div class="ui-block-b"><a href="#foods" data-role="button"><img src="images/food.jpg" style="width:100px;height:100px;border-radius:50px"><br>Foods</a></div>
+      </div>
+	</div>
+</div>
+<!--end menu-->
+
+<!--menu cocktails-->
+<div data-role="page" id="cocktails">
+  <div data-role="header" data-theme="e">
+  	<a href="#menu" data-role="button" data-icon="back">Back</a>
+    <h1>Cocktails</h1>
+  </div>
+  <div data-role="content" data-theme="e" style="">
+    <ul data-role="listview" id="details-menu" style="width:80%;margin-left:10%;margin-top:5%;margin-bottom:5%" data-inset="true">
+       <li style="height:55px;line-height:25px;"><img src="images/Bloody Mary.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Bloody Mary</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/Gin and Tonic.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Gin and Tonic</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/Manhattan.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Manhattan</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/martini.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Martini</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/Mojito.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Mojito</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/_MG_0419.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Sangria</a></li>
+    <li style="height:55px;line-height:25px"><img src="images/Drink.well_.-Negroni.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Negroni</a></li>
+    <li style="height:55px;line-height:25px"><img src="images/margarita.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Margarita</a></li>
+    <li style="height:55px;line-height:25px"><img src="images/Pina_Colada_with_key_ingredients.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Pina Colada</a></li>
+    <li style="height:55px;line-height:25px"><img src="images/Pisco-Sours-at-Ceviche.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Pisco Sours</a></li>
+    <li style="height:55px;line-height:25px"><img src="images/singapore-sling-www-hungrygowhere-com.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Singapore Sling</a></li>
+    </ul>
+  </div>
+  <div data-role="footer" style="height:50px" data-theme="e"></div>
+</div>
+<!--end menu cocktails-->
+
+<!--menu ice cream-->
+<div data-role="page" id="ice-cream">
+  <div data-role="header" data-theme="e">
+  	<a href="#menu" data-role="button" data-icon="back">Back</a>
+    <h1>Ice Creams</h1>
+  </div>
+  <div data-role="content" data-theme="e">
+    <ul data-role="listview" style="width:80%;margin-left:10%;margin-top:5%;margin-bottom:5%;">
+      <li style="height:55px;line-height:25px"><img src="images/35958_0_body_11-lau-kem-bud-danh-cho-4-nguoi.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Fondue Kem</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/298445-body-bs (2).jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Miracle Four</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/10731127_633832933392383_1918700773289236735_n.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Golden Gate</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/20160108-014955-check-in-20-discount-04_520x763.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Affogato</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/13085375377175.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Junior Sundae</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/13307423821524.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Taco Sundae</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/20130206092525GMBd8c6F.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Black & White</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/foody-mobile-s2-jpg-176-635742972481951392.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Banana Brownie</a></li>
+      <li style="height:55px;line-height:25px"><img src="images/kem-bud-s-an-hoai-khong-ngan---tang-tret-parkson-flemington-184-le-dai-hanh-20150824162406-2.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Family Bucket</a></li>
+    </ul>
+  	
+  </div>
+  <div data-role="footer" style="height:50px" data-theme="e"></div>
+</div>
+
+<!--end menu ice cream-->
+
+<!--coffee page-->
+<div data-role="page" id="coffee">
+  <div data-role="header" data-theme="e">
+  	<a href="#menu" data-role="button" data-icon="back">Back</a>
+    <h1>Coffee</h1>
+  </div>
+  <div data-role="content" data-theme="e">
+  	<ul data-role="listview" style="width:80%;margin-left:10%; margin-top:5%;margin-bottom:5%">
+        <li style="height:50px;line-height:25px"><img src="images/1_irishcoffee.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Irish Coffee</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/17846258-Latte-art-coffee-in-coffee-beans-background-Stock-Photo.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px;"><a href="#confirm-order">Latte</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/caffe-americano.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Americano</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/Green-Tea-Latte.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Matcha Capuchino</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/3BNWMF294C2FAA14232E62l.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Houjicha Capuchino</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/buoi-sang-nhanh-tinh-tao-voi-ly-capuchino-tu-pha.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Capuchino</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/espresso-001.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Expresso</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/M013-2.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Genmaicha Tea Latte</a></li>
+    </ul>
+  </div>
+  <div data-role="footer" style="height:50px" data-theme="e"></div>
+  
+</div>
+
+<!--end coffee page-->
+
+<!--smoothies page-->
+<div data-role="page" id="smoothies">
+  <div data-role="header" data-theme="e">
+  	<a href="#menu" data-role="button" data-icon="back">Back</a>
+    <h1>Smoothies</h1>
+  </div>
+  <div data-role="content" data-theme="e">
+    <ul data-role="listview" style="width:80%;margin-left:10%; margin-top:5%;margin-bottom:5%;">
+      	<li style="height:50px;line-height:25px"><img src="images/19999-smoothies-1.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Peach Smoothies</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/20000-smoothies-2.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Straberry Smoothies</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/20001-smoothies-3.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Banana and Avocado Smoothies</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/20002-smoothies-4.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Avocado and Mango Smoothies</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/20003-smoothies-5.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Bluberry Smoothies</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/20004-smoothies-6.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Raspberry Smoothies</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/20005-smoothies-7.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Orange Smoothies</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/20006-smoothies-8.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Apple Smoothies</a></li>
+        <li style="height:50px;line-height:25px"><img src="images/20007-smoothies-9.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Pineapple Smoothies</a></li>
+    </ul>
+  	
+  </div>
+  <div data-role="footer" style="height:50px" data-theme="e"></div>
+</div>
+
+<!--end smothies page-->
+
+<!-- cakes page-->
+<div data-role="page" id="cakes">
+  <div data-role="header" data-theme="e">
+  	<a href="#menu" data-role="button" data-icon="back">Back</a>
+    <h1>Cakes</h1>
+  </div>
+  <div data-role="content" data-theme="e">
+    <ul data-role="listview" style="width:80%;margin-left:10%; margin-top:5%;margin-bottom:5%;">
+      <li style="height:50px;line-height:25px"><img src="images/banhbonglan.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Custard cake</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/banhbonglankem.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Cream cake</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/banhcade.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Cadé cake</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/banhcua.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">crab cake</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/banhcuonnhandua.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Coconut's rolls</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/banhsuquesocola.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Suque chocolate cake</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/banhsuque.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Suque cake</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/banhsumini.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Choux mini</a></li>
+    </ul>
+  	
+  </div>
+  <div data-role="footer" style="height:50px" data-theme="e"></div>
+</div>
+
+<!--end cakes page-->
+
+<!--foods page-->
+<div data-role="page" id="foods">
+  <div data-role="header" data-theme="e">
+  	<a href="#menu" data-role="button" data-icon="back">Back</a>
+    <h1>Cakes</h1>
+  </div>
+  <div data-role="content" data-theme="e">
+    <ul data-role="listview" style="width:80%;margin-left:10%; margin-top:5%;margin-bottom:5%;">
+      <li style="height:50px;line-height:25px"><img src="images/3.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Pumpkin carrot soup</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/4.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Clam soup peppers</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/11.-ca-hoi-tron-cam.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Mixing orange salmon</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/17.-banh-mi-sot-ca-hoi.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Bread sauce salmon</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/bo-sot-pate-gan.png" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#details">Beef liver pate sauce</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/cach-lam-bo-nau-cam.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Orange beef</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/6283606998_db132dcf25_z.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Hungarian beef</a></li>
+      <li style="height:50px;line-height:25px"><img src="images/hoabtt2011111411475449_0.jpg" style="width:50px;height:49px;border-radius:50px;float:left;clear:both;margin-left:10px"><a href="#confirm-order">Bean soup chicken</a></li>
+    </ul>
+  		
+  </div>
+  <div data-role="footer" style="height:50px" data-theme="e"></div>
+</div>
+
+<!--end foods page-->
+<!--confirm order-->
+<div data-role="page" id="confirm-order">
+  <div data-role="header" data-theme="e">
+    <h1>Confirm Order</h1>
+  </div>
+  <div data-role="content" data-theme="e">
+  		<a href="#successfully" data-role="button" data-icon="check" data-theme="b">Order</a>
+        <a href="#menu" data-role="button" data-icon="delete" data-theme="a">Cancel</a>
+  </div>
+  <div data-role="footer" style="height:50px" data-theme="e"></div>
+</div>
+
+<!--end confirm order-->
+
+<!--successfully page-->
+<div data-role="page" id="successfully" data-theme="e">
+  <div data-role="header" data-theme="e">
+    <h1>Notification</h1>
+  </div>
+  <div data-role="content" style="text-align:center" data-theme="e">
+  		<img src="images/fa-check-circle.png" style="width:150px;height:150px"><br>
+        <p><b>Order Successfully! <br>Please, Just a moment!</b></p>
+  </div>
+   <div data-role="footer"  data-theme="e" data-type="horizontal">
+   		<h1><a href="#menu" data-role="button" data-icon="custom">Menu</a>
+        <a href="#home" data-role="button" data-icon="home">Home</a></h1>
+   </div>
+</div>
+<!--end successfully page-->
+
+<!--manager-->
+<div data-role="page" id="manager" data-theme="e" data-transition="slidedown">
+  <div data-role="header" data-theme="e">
+  	<a href="#home" data-role="button" data-icon="home">Home</a>
+    <h1>Manager</h1>
+  </div>
+  <div data-role="content" style="text-align:center">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>Salary</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Report</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Export-Import Warehouse</h3>
+        <p>Content</p>
+      </div>
+    </div>
+  
+  </div>
+ </div>
+<!--end manager page-->
+
+<!--bartender-->
+<div data-role="page" id="bartender" data-theme="e">
+  <div data-role="header" data-theme="e">
+  	<a href="#home" data-role="button" data-icon="home">Home</a>
+    <h1>Bartender</h1>
+  </div>
+  <div data-role="content" style="text-align:center">
+
+  </div>
+  <div data-role="navbar" data-theme="e" >
+    <ul style="text-align:center">
+      <li><a href="#" data-role="button" style="background:#F00;color:#FFF;font-weight:bold">Time's up</a></li>
+    </ul>
+    
+  </div>
+</div>
+
+
+</body>
+</html>
